@@ -8,6 +8,44 @@
     <title>Sign up</title>
 </head>
 <body>
-    
+    <div class="cover">
+        <img src="cover-small.jpg" alt="castle-drawing">
+    </div>
+
+    <div class="content-container">
+        <h1>Submit your application</h1>
+        <p>Choose wisely with school you want to be in. <em>There will be no shifting</em></p>
+
+        <form action="#" method="post">
+            <div class="form-row id-row">
+                <label for="first-name">first name</label>
+                <input type="text" name="firstName" id="first-name" required>
+
+                <label for="last-name">Last name</label>
+                <input type="text" name="lastName" id="last-name" required>
+            </div>
+
+            <div class="form-row contact-row">
+                <label for="email">email</label>
+                <input type="email" name="userEmail" id="email" required>
+                
+                <label for="phone">phone number</label>
+                <input type="tel" name="lastName" id="phone" required>
+            </div>
+
+            <div class="form-row password-row">
+                <label for="password">password</label>
+                <input type="password" name="userPassword" id="password" required>
+                
+                <label for="password-confirm">confirm password</label>
+                <input type="password" name="passwordConfirm" id="password-confirm" required>
+            </div>
+
+            <div class="form-row password-row">
+                <button type="submit">Submit Application</button>
+            </div>
+        </form>
+        <p class="log-in-container">Already have an account? <a href="#" class="link">Log in</a></p>
+    </div>
 </body>
 </html>
