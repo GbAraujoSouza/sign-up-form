@@ -1,0 +1,84 @@
+@charset 'UTF-8';
+
+/* import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap');
+
+@font-face {
+    font-family: norse-bold;
+    src: url('Norse-Bold.otf');
+}
+
+
+/* basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* variables */
+:root {
+    --regular-font: 'Roboto', sans-serif;
+    --norse-font: norse-bold, sans-serif;
+}
+
+body {
+    font-family: var(--regular-font);
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    max-width: 1920px;
+
+    font-size: 2rem;
+}
+
+.cover {
+    width: 700px;
+}
+
+.cover > img{
+    height: 100vh;
+    margin-bottom: -4px; /*fit exactly to the view hight*/
+}
+
+.content-container {
+    padding: 60px;
+    flex-grow: 2;
+}
+
+.content-container h1 {
+    padding-top: 200px;
+    font-size: 2.5rem;
+}
+
+.content-container p {
+    padding: 20px 0;
+}
+
+.content-container em {
+    display: block;
+}
+
+.form-row {
+    margin-bottom: 30px;
+    display: flex;
+    gap: 100px;
+    font-size: 1.8rem;
+}
+
+/* .form-row:nth-last-of-type(2) {
+    box-shadow: ;
+} */
+
+.form-element label{
+    display: block;
+}
+
+.form-row > button {
+    margin-top: 20px;
+    font-size: 1.8rem
+}
+
+.log-in-container {
+    font-size: 1.6rem;
+}

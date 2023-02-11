@@ -18,30 +18,42 @@
 
         <form action="#" method="post">
             <div class="form-row id-row">
-                <label for="first-name">first name</label>
-                <input type="text" name="firstName" id="first-name" required>
+                <div class="form-element">
+                    <label for="first-name">first name</label>
+                    <input type="text" name="firstName" id="first-name" required>
+                </div>
 
-                <label for="last-name">Last name</label>
-                <input type="text" name="lastName" id="last-name" required>
+                <div class="form-element">
+                    <label for="last-name">Last name</label>
+                    <input type="text" name="lastName" id="last-name" required>
+                </div>
             </div>
 
             <div class="form-row contact-row">
-                <label for="email">email</label>
-                <input type="email" name="userEmail" id="email" required>
+                <div class="form-element">
+                    <label for="email">email</label>
+                    <input type="email" name="userEmail" id="email" required>
+                </div>
                 
-                <label for="phone">phone number</label>
-                <input type="tel" name="lastName" id="phone" required>
+                <div class="form-element">
+                    <label for="phone">phone number</label>
+                    <input type="tel" name="lastName" id="phone" required>
+                </div>
             </div>
 
             <div class="form-row password-row">
-                <label for="password">password</label>
-                <input type="password" name="userPassword" id="password" required>
+                <div class="form-element">
+                    <label for="password">password</label>
+                    <input type="password" name="userPassword" id="password" required>
+                </div>
                 
-                <label for="password-confirm">confirm password</label>
-                <input type="password" name="passwordConfirm" id="password-confirm" required>
+                <div class="form-element">
+                    <label for="password-confirm">confirm password</label>
+                    <input type="password" name="passwordConfirm" id="password-confirm" required>
+                </div>
             </div>
 
-            <div class="form-row password-row">
+            <div class="form-row submit-row">
                 <button type="submit">Submit Application</button>
             </div>
         </form>
