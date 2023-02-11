@@ -20,6 +20,12 @@
 :root {
     --regular-font: 'Roboto', sans-serif;
     --norse-font: norse-bold, sans-serif;
+
+    --dark-blue-clr: #272B40;
+    --dark-brown-clr: #594839;
+    --light-brown-clr: #D9C5AD;
+    --regular-brown-clr: #8C7354;
+    --grey-brown-clr: #BFB2AA;
 }
 
 body {
@@ -30,6 +36,8 @@ body {
     max-width: 1920px;
 
     font-size: 2rem;
+
+    color: var(--dark-brown-clr);
 }
 
 .cover {
@@ -45,6 +53,8 @@ body {
 .content-container {
     padding: 60px;
     flex-grow: 2;
+
+    background-color: var(--light-brown-clr);
 }
 
 .content-container h1 {
@@ -68,7 +78,6 @@ body {
 
 .form-row:nth-last-of-type(2) {
     position: relative;
-    /* box-shadow: 0px 3px 2px -2px #000000; */
 }
 
 .form-row:nth-last-of-type(2)::after {
@@ -85,16 +94,43 @@ body {
 .form-element label{
     display: block;
     text-transform: uppercase;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     font-size: 1.45rem;
-    margin-bottom: -10px;
+}
+
+.form-element input[type="text"],
+.form-element input[type="email"],
+.form-element input[type="tel"],
+.form-element input[type="password"] {
+    padding: 7px;
+
+    font-size: 1.25rem;
+    background-color: #e7d1b5;
+    /* background-color: var(--light-brown-clr); */
+    /* border: 2px solid var(--grey-brown-clr); */
 }
 
 .form-row > button {
     margin-top: 60px;
-    font-size: 1.8rem
+    font-size: 1.8rem;
+
+    font-weight: bold;
+
+    color: #fff;
+    background-color: var(--dark-blue-clr);
+
+    border: none;
+    border-radius: 15px;
+
+    padding: 15px 50px;
+    cursor: pointer;
 }
 
 .log-in-container {
     font-size: 1.6rem;
+}
+
+.log-in-container > a {
+    color: var(--dark-blue-clr);
+    text-decoration: none;
 }
