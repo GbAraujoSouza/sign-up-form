@@ -7,6 +7,10 @@
     font-family: norse-bold;
     src: url('Norse-Bold.otf');
 }
+@font-face {
+    font-family: harry-potter;
+    src: url('HARRYP__.TTF');
+}
 
 
 /* basic reset */
@@ -20,6 +24,7 @@
 :root {
     --regular-font: 'Roboto', sans-serif;
     --norse-font: norse-bold, sans-serif;
+    --harry-font: harry-potter;
 
     --dark-blue-clr: #272B40;
     --dark-brown-clr: #594839;
@@ -66,14 +71,21 @@ body {
     padding-bottom: 20px;
     font-size: 6rem;
     font-family: var(--norse-font);
+    font-family: var(--harry-font);
+    letter-spacing: 4px;
+    text-transform: capitalize;
 }
 
 .content-container p {
     padding: 20px 60px;
+    font-family: var(--norse-font);
+    font-size: 2.7rem;
 }
 
 .content-container em {
     display: block;
+    font-family: var(--harry-font);
+    font-size: 2.7rem;
 }
 
 .form-row {
