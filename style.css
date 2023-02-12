@@ -168,6 +168,10 @@ body {
     cursor: pointer;
 }
 
+.form-row > button:hover {
+    background-color: var(--dark-blue-hover-clr);
+}
+
 .log-in-container {
     font-size: 1.6rem;
 }
@@ -175,4 +179,8 @@ body {
 .log-in-container > a {
     color: var(--dark-blue-clr);
     text-decoration: none;
+}
+.log-in-container > a:hover {
+    color: var(--dark-blue-hover-clr);
+    text-decoration: underline;
 }
