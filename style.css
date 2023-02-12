@@ -27,6 +27,7 @@
     --harry-font: harry-potter;
 
     --dark-blue-clr: #272B40;
+    --dark-blue-hover-clr: #383e5c;
     --dark-brown-clr: #594839;
     --light-brown-clr: #D9C5AD;
     --regular-brown-clr: #8C7354;
@@ -99,18 +100,6 @@ body {
     box-shadow: 0px 6px 6px -2px #0000004b;
 }
 
-/* .form-row:nth-last-of-type(2)::after {
-    content:"";
-    position: absolute;
-    top: 30px;
-    width:100%;
-    height: 100%;
-    z-index:-1;
-    transform:scaleX(1.2) translateX(-50px);
-    box-shadow: 0px 6px 6px -2px #0000004b;
-    overflow: hidden;
-} */
-
 .form-element label{
     display: block;
     text-transform: uppercase;
@@ -130,19 +119,40 @@ body {
     appearance: none;
     outline: none;
     border-radius: 8px;
+
+    border: 1px solid var(--dark-brown-clr)
 }
 
 .form-element input[type="text"]:focus,
 .form-element input[type="email"]:focus,
 .form-element input[type="tel"]:focus,
 .form-element input[type="password"]:focus {
-    border-bottom: 2px solid var(--dark-blue-clr);
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.342);
+    outline: none;
+}
+
+.form-element input[type="text"]:focus:valid,
+.form-element input[type="email"]:focus:valid,
+.form-element input[type="tel"]:focus:valid,
+.form-element input[type="password"]:focus:valid {
+    border: 2px solid rgb(0, 182, 0);
+}
+.form-element input[type="text"]:focus:invalid,
+.form-element input[type="email"]:focus:invalid,
+.form-element input[type="tel"]:focus:invalid,
+.form-element input[type="password"]:focus:invalid {
+    border: 2px solid red;
+}
+
+/* Hover effect */
+.form-element input[type="text"]:hover,
+.form-element input[type="email"]:hover,
+.form-element input[type="tel"]:hover,
+.form-element input[type="password"]:hover {
     transform: scale(1.05);
 }
 
 .form-row > button {
-
-
     margin: 60px;
     font-size: 1.8rem;
 
